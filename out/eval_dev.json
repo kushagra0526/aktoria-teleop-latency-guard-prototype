@@ -1,0 +1,260 @@
+{
+ "local": {
+  "naive": {
+   "episodes": 60.0,
+   "hard": 7.0,
+   "contacts": 9.0,
+   "eps_with_hard": 5.0,
+   "peak_impact": 0.252,
+   "done": 58.0,
+   "guard_stops": 0.0,
+   "time_sum": 1127.87,
+   "time_n": 58.0,
+   "mean_time": 19.45
+  },
+  "timeout": {
+   "episodes": 60.0,
+   "hard": 7.0,
+   "contacts": 9.0,
+   "eps_with_hard": 5.0,
+   "peak_impact": 0.252,
+   "done": 58.0,
+   "guard_stops": 0.0,
+   "time_sum": 1127.87,
+   "time_n": 58.0,
+   "mean_time": 19.45
+  },
+  "buffer80": {
+   "episodes": 60.0,
+   "hard": 7.0,
+   "contacts": 8.0,
+   "eps_with_hard": 5.0,
+   "peak_impact": 0.275,
+   "done": 58.0,
+   "guard_stops": 0.0,
+   "time_sum": 1104.67,
+   "time_n": 58.0,
+   "mean_time": 19.05
+  },
+  "guard": {
+   "episodes": 60.0,
+   "hard": 0.0,
+   "contacts": 1.0,
+   "eps_with_hard": 0.0,
+   "peak_impact": 0.0,
+   "done": 58.0,
+   "guard_stops": 64.0,
+   "time_sum": 1128.99,
+   "time_n": 58.0,
+   "mean_time": 19.47
+  },
+  "guard-no-cap": {
+   "episodes": 60.0,
+   "hard": 8.0,
+   "contacts": 9.0,
+   "eps_with_hard": 6.0,
+   "peak_impact": 0.252,
+   "done": 58.0,
+   "guard_stops": 64.0,
+   "time_sum": 1125.75,
+   "time_n": 58.0,
+   "mean_time": 19.41
+  },
+  "guard-no-deadman": {
+   "episodes": 60.0,
+   "hard": 0.0,
+   "contacts": 1.0,
+   "eps_with_hard": 0.0,
+   "peak_impact": 0.0,
+   "done": 58.0,
+   "guard_stops": 0.0,
+   "time_sum": 1128.99,
+   "time_n": 58.0,
+   "mean_time": 19.47
+  },
+  "guard-cap-only": {
+   "episodes": 60.0,
+   "hard": 0.0,
+   "contacts": 1.0,
+   "eps_with_hard": 0.0,
+   "peak_impact": 0.0,
+   "done": 58.0,
+   "guard_stops": 0.0,
+   "time_sum": 1130.69,
+   "time_n": 58.0,
+   "mean_time": 19.49
+  }
+ },
+ "mx_sf": {
+  "naive": {
+   "episodes": 60.0,
+   "hard": 9.0,
+   "contacts": 11.0,
+   "eps_with_hard": 6.0,
+   "peak_impact": 0.225,
+   "done": 58.0,
+   "guard_stops": 0.0,
+   "time_sum": 1254.26,
+   "time_n": 56.0,
+   "mean_time": 22.4
+  },
+  "timeout": {
+   "episodes": 60.0,
+   "hard": 8.0,
+   "contacts": 10.0,
+   "eps_with_hard": 6.0,
+   "peak_impact": 0.225,
+   "done": 58.0,
+   "guard_stops": 0.0,
+   "time_sum": 1263.36,
+   "time_n": 56.0,
+   "mean_time": 22.56
+  },
+  "buffer80": {
+   "episodes": 60.0,
+   "hard": 8.0,
+   "contacts": 10.0,
+   "eps_with_hard": 6.0,
+   "peak_impact": 0.233,
+   "done": 58.0,
+   "guard_stops": 0.0,
+   "time_sum": 1259.03,
+   "time_n": 56.0,
+   "mean_time": 22.48
+  },
+  "guard": {
+   "episodes": 60.0,
+   "hard": 0.0,
+   "contacts": 1.0,
+   "eps_with_hard": 0.0,
+   "peak_impact": 0.0,
+   "done": 58.0,
+   "guard_stops": 299.0,
+   "time_sum": 1269.9,
+   "time_n": 56.0,
+   "mean_time": 22.68
+  },
+  "guard-no-cap": {
+   "episodes": 60.0,
+   "hard": 9.0,
+   "contacts": 10.0,
+   "eps_with_hard": 7.0,
+   "peak_impact": 0.231,
+   "done": 58.0,
+   "guard_stops": 299.0,
+   "time_sum": 1264.31,
+   "time_n": 56.0,
+   "mean_time": 22.58
+  },
+  "guard-no-deadman": {
+   "episodes": 60.0,
+   "hard": 0.0,
+   "contacts": 1.0,
+   "eps_with_hard": 0.0,
+   "peak_impact": 0.0,
+   "done": 56.0,
+   "guard_stops": 0.0,
+   "time_sum": 1256.47,
+   "time_n": 56.0,
+   "mean_time": 22.44
+  },
+  "guard-cap-only": {
+   "episodes": 60.0,
+   "hard": 0.0,
+   "contacts": 1.0,
+   "eps_with_hard": 0.0,
+   "peak_impact": 0.0,
+   "done": 58.0,
+   "guard_stops": 0.0,
+   "time_sum": 1259.71,
+   "time_n": 56.0,
+   "mean_time": 22.49
+  }
+ },
+ "in_sf": {
+  "naive": {
+   "episodes": 60.0,
+   "hard": 8.0,
+   "contacts": 11.0,
+   "eps_with_hard": 5.0,
+   "peak_impact": 0.197,
+   "done": 57.0,
+   "guard_stops": 0.0,
+   "time_sum": 1424.71,
+   "time_n": 54.0,
+   "mean_time": 26.38
+  },
+  "timeout": {
+   "episodes": 60.0,
+   "hard": 7.0,
+   "contacts": 8.0,
+   "eps_with_hard": 5.0,
+   "peak_impact": 0.192,
+   "done": 58.0,
+   "guard_stops": 0.0,
+   "time_sum": 1455.49,
+   "time_n": 54.0,
+   "mean_time": 26.95
+  },
+  "buffer80": {
+   "episodes": 60.0,
+   "hard": 7.0,
+   "contacts": 8.0,
+   "eps_with_hard": 5.0,
+   "peak_impact": 0.192,
+   "done": 58.0,
+   "guard_stops": 0.0,
+   "time_sum": 1455.63,
+   "time_n": 54.0,
+   "mean_time": 26.96
+  },
+  "guard": {
+   "episodes": 60.0,
+   "hard": 0.0,
+   "contacts": 1.0,
+   "eps_with_hard": 0.0,
+   "peak_impact": 0.0,
+   "done": 58.0,
+   "guard_stops": 342.0,
+   "time_sum": 1477.5,
+   "time_n": 54.0,
+   "mean_time": 27.36
+  },
+  "guard-no-cap": {
+   "episodes": 60.0,
+   "hard": 7.0,
+   "contacts": 8.0,
+   "eps_with_hard": 5.0,
+   "peak_impact": 0.192,
+   "done": 58.0,
+   "guard_stops": 340.0,
+   "time_sum": 1469.21,
+   "time_n": 54.0,
+   "mean_time": 27.21
+  },
+  "guard-no-deadman": {
+   "episodes": 60.0,
+   "hard": 0.0,
+   "contacts": 1.0,
+   "eps_with_hard": 0.0,
+   "peak_impact": 0.0,
+   "done": 55.0,
+   "guard_stops": 0.0,
+   "time_sum": 1433.15,
+   "time_n": 54.0,
+   "mean_time": 26.54
+  },
+  "guard-cap-only": {
+   "episodes": 60.0,
+   "hard": 0.0,
+   "contacts": 1.0,
+   "eps_with_hard": 0.0,
+   "peak_impact": 0.0,
+   "done": 57.0,
+   "guard_stops": 0.0,
+   "time_sum": 1429.83,
+   "time_n": 54.0,
+   "mean_time": 26.48
+  }
+ }
+}
