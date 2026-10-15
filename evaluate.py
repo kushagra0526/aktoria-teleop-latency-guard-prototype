@@ -63,7 +63,7 @@ def show(name, res):
     for route, pols in res.items():
         for p, a in pols.items():
             print(f"{route:<12}{p:<18}{int(a['hard']):>14}{int(a['eps_with_hard']):>12}{a['peak_impact']:>10.2f}"
-                  f"{int(a['done'])}/{int(a['episodes']):<5}{str(a['mean_time']):>10}{int(a['guard_stops']):>12}")
+                  f"{int(a['done']):>5}/{int(a['episodes']):<3}{str(a['mean_time']):>11}{int(a['guard_stops']):>12}")
 
 
 if __name__ == "__main__":

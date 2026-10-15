@@ -16,7 +16,7 @@ DT = 0.004
 FRAME = 1 / 30
 
 
-def run(layout, route, policy_name, seed, op=None, routes=ROUTES, t_max=45.0):
+def run(layout, route, policy_name, seed, op=None, routes=ROUTES, t_max=45.0, record=None):
     rng = random.Random(seed)
     # a trained remote operator: knows the lag (the UI shows it) and keeps blind travel ~lag_budget metres
     op = op or {"speed": 0.35, "gain": 3.0, "react": 0.2, "noise": 0.02, "reach": 0.025, "pass": 0.045, "lag_budget": 0.10}
@@ -116,6 +116,9 @@ def run(layout, route, policy_name, seed, op=None, routes=ROUTES, t_max=45.0):
         nx = min(max(nx, R), 1.2 - R)
         ny = min(max(ny, R), 0.8 - R)
         pos = [nx, ny]
+        if record is not None and int(t / DT) % 10 == 0:
+            record.append((round(t, 3), round(nx, 4), round(ny, 4), round(math.hypot(*vel), 3), in_contact,
+                           any(a_ <= t < b_ for a_, b_ in win)))
         # task truth: the robot itself holds each goal (pick, then place) for 0.3 s
         gi = layout["goal_idx"][goals_reached] if goals_reached < len(layout["goal_idx"]) else None
         if gi is not None:
@@ -131,5 +134,7 @@ def run(layout, route, policy_name, seed, op=None, routes=ROUTES, t_max=45.0):
             else:
                 hold = 0.0
         t += DT
+    if record is not None:
+        record.append(("stalls", win))
     return {"route": route, "policy": policy_name, "done": done_t is not None, "time": round(done_t or t_max, 2),
             "contacts": contacts, "hard": hard, "peak_impact": round(peak, 3), "guard_stops": getattr(pol, "stops", 0)}
